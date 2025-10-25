@@ -1,0 +1,32 @@
+[2025/10/18 22:42:21]: §9          __             _       
+[2025/10/18 22:42:21]: §9  _ __   / /  ___   __ _(_)_ __  
+[2025/10/18 22:42:21]: §9 | '_ \ / /  / _ \ / _` | | '_ \ 
+[2025/10/18 22:42:21]: §9 | | | / /__| (_) | (_| | | | | |
+[2025/10/18 22:42:21]: §9 |_| |_\____/\___/ \__, |_|_| |_|
+[2025/10/18 22:42:21]: §9                  |___/            
+[2025/10/18 22:42:21]: §9 By: www.nickuc.com - V 10.4.23 DEVELOPMENT
+[2025/10/18 22:42:21]: §9 
+[2025/10/18 22:42:22]: §3[nLogin] [DEBUG] The config.yml file was created successfully.
+[2025/10/18 22:42:25]: §3[nLogin] [DEBUG] All settings were loaded in 2998 ms.
+[2025/10/18 22:42:25]: §3[nLogin] [DEBUG] Loading the messages_en.yml message file...
+[2025/10/18 22:42:25]: §3[nLogin] [DEBUG] All plugin messages were loaded in 257 ms (languageByClient=false).
+[2025/10/18 22:42:25]: §3[nLogin] [DEBUG] All proxy settings were loaded in 7 ms.
+[2025/10/18 22:42:25]: §3[nLogin] [DEBUG] Loading database...
+[2025/10/18 22:42:26]: [nLogin] Generating RSA keypair... (this may take a while)
+[2025/10/18 22:42:29]: [nLogin] The RSA key pair was successfully generated. Took 2.90s
+[2025/10/18 22:42:30]: §3[nLogin] [DEBUG] Starting logger filter...
+[2025/10/18 22:42:30]: [nLogin] Starting the OpeNLogin conversion...
+[2025/10/18 22:42:30]: §e[nLogin] [WARN] Initializing the OpeNLogin conversion
+[2025/10/18 22:42:30]: §e[nLogin] [WARN] Please do not shut down your server.
+[2025/10/18 22:42:31]: [nLogin] OpeNLogin data has been successfully converted.
+[2025/10/18 22:42:31]: [nLogin] No users have been converted ~ 0.38s
+[2025/10/18 22:42:31]: [nLogin] Downloading ProtocolLib...
+[2025/10/18 22:42:31]: §4[nLogin] [ERROR] §c
+[2025/10/18 22:42:31]: §4[nLogin] [ERROR] §cProtocolLib could not be downloaded automatically.
+[2025/10/18 22:42:31]: §4[nLogin] [ERROR] §c
+[2025/10/18 22:42:31]: §4[nLogin] [ERROR] §cPlease go to the link below and download below:
+[2025/10/18 22:42:31]: §4[nLogin] [ERROR] §chttps://ci.dmulloy2.net/job/ProtocolLib/
+[2025/10/18 22:42:31]: §4[nLogin] [ERROR] §c
+[2025/10/18 22:42:31]: §4[nLogin] [ERROR] §cTHE SERVER WILL SHUT DOWN AUTOMATICALLY AFTER 60 SECONDS.
+[2025/10/18 22:42:31]: §4[nLogin] [ERROR] §c
+[2025/10/18 22:43:56]: [nLogin] Successful plugin core shutdown (took 0.01s)
