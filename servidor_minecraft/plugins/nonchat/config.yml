@@ -1,0 +1,106 @@
+language: en
+debug: false
+update-checker: true
+default-channel: global
+message-delivery:
+  notify-undelivered: false
+interactive-placeholders:
+  enabled: true
+  item-enabled: true
+  ping-enabled: true
+death:
+  enabled: true
+  format: '%luckperms_prefix% §f%player_name%§r %luckperms_suffix%§f died'
+  show-coordinates: true
+join-messages:
+  enabled: true
+  format: §8(§a+§8) %luckperms_prefix% §f%player_name%§r %luckperms_suffix%
+quit-messages:
+  enabled: true
+  format: §8(§c-§8) %luckperms_prefix% §f%player_name%§r %luckperms_suffix%
+private-chat-format: '§f{sender} §7-> §f{target}§7: §7{message}'
+spy-format: '§f{sender} §7-> §f{target}§7: §7{message}'
+chat-bubbles:
+  enabled: true
+  duration: 5
+  height: 2.5
+  show-in-private-channels: false
+channels:
+  global:
+    enabled: true
+    display-name: Global
+    format: '§7(§6G§7)§r %luckperms_prefix% §f%player_name%§r %luckperms_suffix%§7:
+      §f{message}'
+    radius: -1
+    character: '!'
+    send-permission: ''
+    receive-permission: ''
+    cooldown: 0
+    min-length: 0
+    max-length: -1
+  local:
+    enabled: true
+    display-name: Local
+    format: '§7(§6L§7)§r %luckperms_prefix% §f%player_name%§r %luckperms_suffix%§7:
+      §f{message}'
+    radius: 100
+    character: ''
+    send-permission: ''
+    receive-permission: ''
+    cooldown: 0
+    min-length: 0
+    max-length: -1
+  staff:
+    enabled: true
+    display-name: Staff
+    format: '§7(§bSC§7)§r %luckperms_prefix% §f%player_name%§r %luckperms_suffix%§7:
+      §f{message}'
+    radius: -1
+    character: '*'
+    send-permission: nonchat.chat.staff
+    receive-permission: nonchat.chat.staff
+    cooldown: 0
+    min-length: 0
+    max-length: -1
+roleplay-commands:
+  me:
+    enabled: true
+    format: '&7*%player_name%: {message}'
+  roll:
+    enabled: true
+    format: '&7*%player_name% rolled a {number}'
+hover-text:
+  enabled: true
+  format:
+  - '&#63E78C⭐ %player_name%'
+  - '&#63E78C► Rango: &#FFFFFF%luckperms_prefix%'
+  - '&#63E78C► Exp: &#FFFFFF%player_level%'
+  - '&#63E78C► Tiempo Jugado: &#FFFFFF%statistic_time_played%'
+  - '&#63E78C► Ping: &#FFFFFF%player_ping%ms'
+  - §7
+  - §8Click para mandar un mensaje privado...
+banned-words:
+- null
+- null
+- null
+- null
+caps-filter:
+  enabled: true
+  max-caps-percentage: 70
+  min-length: 4
+broadcast:
+  format: |2
+
+    §#FFAFFBBroadcast: §f{message}
+  random: true
+  example:
+    enabled: true
+    message: This message will be sent every 60 seconds
+    interval: 60
+anti-ad:
+  enabled: true
+  sensitivity: 0.7
+  whitelisted-urls:
+  - discord.gg/NAWsxe3J3R
+  staff-notify: true
+  punish-command: ban %player% advertising

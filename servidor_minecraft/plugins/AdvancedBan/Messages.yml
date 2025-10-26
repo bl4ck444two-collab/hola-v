@@ -1,0 +1,357 @@
+General:
+  Prefix: "&9&lSanciones &8&l»"
+  NoPerms: "&9No tienes permiso para eso!"
+  LayoutNotFound: "&9No hay nadie llamado %NAME%"
+  # This will be the replacement for the %DURATION% variable
+  TimeLayoutD: "%D%dia(s) %H%h %M%min y %S%seg"
+  TimeLayoutH: "%H%hora(s) %M%min y %S%seg"
+  TimeLayoutM: "%M%min u %S%sec"
+  TimeLayoutS: "%S% segundos"
+  FailedFetch: "&9No se pudo encontrar el UUID de %NAME%! Ve la consola para más info."
+
+
+Ban:
+  Uso: "&9Uso &8» &7&o/ban (-s) [Nombre] [Razón]"
+  Done: "&9&o%NAME% &7fue suspendido exitosamente!"
+  AlreadyDone: "&9&o%NAME% &7ya ha sido suspendido!"
+  Exempt: "&7No estás habilitado para suspender a &9&o%NAME%"
+  Layout:
+  - '%PREFIX% &7Suspendido permanentemente'
+  - '&7'
+  - '&7'
+  - "&9Razón &8» &7%REASON%"
+  - '&7'
+  - '&8Puedes hacer una apelación en nuestro foro o Discord'
+  - "&eDiscord &8» &9&nwww.boltmc.com"
+  - "&eForo &8» &9&nwww.boltmc.com"
+  Notification:
+  - "&9&o%NAME% &7fue baneado por &e&o%OPERATOR%"
+  - "&7Por la razón: &o%REASON%"
+  UndoNotification: "&e&o%OPERATOR% &7desbaneó a &9&o%NAME%"
+
+Ipban:
+  Uso: "&9Uso &8» &7&o/banip (-s) [Nombre/IP] [Razón]"
+  Layout:
+  - '%PREFIX% &7Suspendido permanentemente'
+  - '&7'
+  - '&7'
+  - "&9Razón &8» &7%REASON%"
+  - '&7'
+  - '&8Puedes hacer una apelación en nuestro foro o Discord'
+  - "&eDiscord &8» &9&nwww.boltmc.com"
+  - "&eForo &8» &9&nwww.boltmc.com"
+  Notification:
+  - "&9&o%NAME% &7fue suspendido de IP por &e&o%OPERATOR%"
+  - "&7Por la razón: &o%REASON%"
+  IpNotCashed: "&9No hay IPs guardadas de %NAME%!"
+
+Tempban:
+  Uso: "&9Uso &8» &7&o/tempban (-s) [Nombre] [Xmo/Xd/Xh/Xm/Xs] [Razón]"
+  MaxDuration: "&9No puedes suspender por un tiempo mayor a %MAX%seg"
+  Layout:
+  - '%PREFIX% &7Temporalmente suspendido'
+  - '&7'
+  - '&7'
+  - "&9Razón &8» &7%REASON%"
+  - "&9Duración &8» &7%DURATION%"
+  - '&7'
+  - '&8Puedes hacer una apelación en nuestro foro o Discord'
+  - "&eDiscord &8» &9&nwww.boltmc.com"
+  - "&eForo &8» &9&nwww.boltmc.com"
+  Notification:
+  - "&9&o%NAME% &7fue suspendido por &e&o%OPERATOR%"
+  - "&7Por la razón: &o%REASON%"
+  - "&7&oDurante: &e&o%DURATION%"
+
+Tempipban:
+  Uso: "&9Uso &8» &7&o/tempipban (-s) [Nombre/IP] [Xmo/Xd/Xh/Xm/Xs] [Razón]"
+  MaxDuration: "&9No puedes suspender por un tiempo mayor a %MAX%seg"
+  Layout:
+  - '%PREFIX% &7Temporalmente suspendido'
+  - '&7'
+  - '&7'
+  - "&9Razón &8» &7%REASON%"
+  - "&9Duración &8» &7%DURATION%"
+  - '&7'
+  - '&8Puedes hacer una apelación en nuestro foro o Discord'
+  - "&eDiscord &8» &9&nwww.boltmc.com"
+  - "&eForo &8» &9&nwww.boltmc.com"
+  Notification:
+  - "&9&o%NAME% &7fue suspendido por &e&o%OPERATOR%"
+  - "&7Por la razón: &o%REASON%"
+  - "&7&oDurante: &e&o%DURATION%"
+
+Mute:
+  Uso: "&9Uso &8» &7&o/mute (-s) [Nombre] [Razón]"
+  Done: "&9&o%NAME% &7fue silenciado exitosamente!"
+  AlreadyDone: "&9&o%NAME% &7ya ha sido silenciado!"
+  Exempt: "&7No puedes silenciar a &9&o%NAME%"
+  Layout:
+  - '%PREFIX% &7Has sido silenciado permanentemente'
+  - "&9Razón &8» &7%REASON%"
+  Notification:
+  - "&9&o%NAME% &7fue silenciado por &e&o%OPERATOR%"
+  - "&7Por la razón: &o%REASON%"
+  UndoNotification: "&e&o%OPERATOR% &7removió el silenciado de &9&o%NAME%"
+
+Tempmute:
+  Uso: "&9Uso &8» &7&o/tempmute (-s) [Nombre] [Xmo/Xd/Xh/Xm/Xs] [Razón]"
+  MaxDuration: "&9No puedes silenciar por un tiempo mayor a %MAX%seg"
+  Layout:
+  - '%PREFIX% &7Silenciado durante %DURATION%'
+  - "&9Razón &8» &7%REASON%"
+  Notification:
+  - "&9&o%NAME% &7fue silenciado por &e&o%OPERATOR%"
+  - "&7Razón: &o%REASON%"
+  - "&7&oDurante: &e&o%DURATION%"
+
+Warn:
+  Uso: "&9Uso &8» &7&o/warn (-s) [Nombre] [Razón]"
+  Done: "&9&o%NAME% &7fue advertido exitosamente!"
+  Exempt: "&7No puedes advertir a &9&o%NAME%"
+  Layout:
+  - '%PREFIX% &9Recibiste una advertencia!'
+  - "&9Razón &8» &7%REASON%"
+  - '&7Ahora tienes &9&o%COUNT% &7advertencia(s) en total!'
+  Notification:
+  - "&9&o%NAME% &7fue advertido por &e&o%OPERATOR%"
+  - "&7Razón: &o%REASON%"
+
+Note:
+  Uso: "&9Uso &8» &7&o/note (-s) [Nombre] [Razón]"
+  Done: "&9&o%NAME% &7recibió la anotación de forma exitosa!"
+  Exempt: "&7No puedes escribir anotaciones sobre &9&o%NAME%"
+  Notification:
+  - "&9&o%NAME% &7recibió una anotación de &e&o%OPERATOR%"
+  - "&7Razón: &o%REASON%"
+
+Tempwarn:
+  Uso: "&9Uso &8» &7&o/tempwarn (-s) [Nombre] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Razón]"
+  MaxDuration: "&9No puedes hacer una advertencia con una duración mayor a %MAX%seg"
+  Layout:
+  - '%PREFIX% &9Recibiste una advertencia temporal'
+  - "&9Razón &8» &7%REASON%"
+  - "&9Expira en &8» &7%DURATION%"
+  - '&7Tienes &9&o%COUNT% &7advertencia(s) en total!'
+  Notification:
+  - "&9&o%NAME% &7fue temporalmente advertido por &e&o%OPERATOR%"
+  - "&7Razón: &o%REASON%"
+  - "&7Expira en: &o%DURATION%"
+
+Kick:
+  Uso: "&9Uso &8» &7&o/kick (-s) [Nombre] [Razón]"
+  Done: "&9&o%NAME% &7fue expulsado!"
+  NotOnline: "&9&o%NAME% &7No está en línea!"
+  Exempt: "&7No puedes expulsar a &9&o%NAME%"
+  Layout:
+  - '%PREFIX% &7Fuiste expulsado'
+  - '&7'
+  - "&9Razón &8» &7%REASON%"
+  - '&7'
+  Notification:
+  - "&9&o%NAME% &7fue expulsado por &e&o%OPERATOR%"
+  - "&7Razón: &o%REASON%"
+
+
+UnBan:
+  Uso: "&9Uso &8» &7&o/unban [Nombre/IP]"
+  NotPunished: "&9&o%NAME% no está suspendido!"
+  Done: "&e&o%NAME% &7fue desbaneado correctamente!"
+  Notification: "&e&o%OPERATOR% &7desbaneó a &9&o%NAME%"
+
+UnMute:
+  Uso: "&9Uso &8» &7&o/unmute [Nombre]"
+  NotPunished: "&9&o%NAME% no está silenciado!"
+  Done: "&e&o%NAME% &7fue desmuteado correctamente!"
+  Notification: "&e&o%OPERATOR% &7desmuteó a &9&o%NAME%"
+
+UnWarn:
+  Uso: "&9Uso &8» &7&o/unwarn [ID] or /unwarn clear [Nombre]"
+  NotFound: "&9No se encontraron advertencias con el ID #%ID%"
+  Done: "&7La advertencia &e&o#%ID% &7fue borrada correctamente!"
+  Notification: "&e&o%OPERATOR% &7quitó una advertencia a &9&o%NAME%"
+  Clear:
+    Empty: "&9&o%NAME% &7no tiene advertencias!"
+    Done: "&7Limpiaste &e&o%COUNT% &7advertencias"
+
+UnNote:
+  Uso: "&9Uso &8» &7&o/unnote [ID] or /unnote clear [Nombre]"
+  NotFound: "&9No se encontraron anotaciones con el ID #%ID%"
+  Done: "&7La anotación &e&o#%ID% &7fue borrada correctamente!"
+  Notification: "&e&o%OPERATOR% &7removió la anotación de &9&o%NAME%"
+  Clear:
+    Empty: "&9&o%NAME% &7no tiene anotaciones!"
+    Done: "&7Limpiaste &e&o%COUNT% &7anotaciones"
+
+UnPunish:
+  Uso: "&9Uso &8» &7&o/unpunish [ID]"
+  NotFound: "&9No se encontró ningún castigo con el ID #%ID%"
+  Done: "&7El castigo &e&o#%ID% &7fue borrado correctamente!"
+
+
+Banlist:
+  Uso: "&9Uso &8» &7&o/banlist <Page>"
+  OutOfIndex: "&9No existe la página %PAGE%!"
+  NoEntries: "&9&oAún no hay entradas"
+  Header:
+  - "%PREFIX% &7Lista de suspensiones:"
+  - "&9&oPlayer/IP &8| &e&oDuración &8| &7&oBaneado por"
+  - "&9&oTipo &8> &7&oRazón"
+  - "&7"
+  Entry:
+  - "&8[&e%DATE%&8]"
+  - "&9%NAME% &8| &e%DURATION% &8| &7%OPERATOR%"
+  - "&9%TYPE% &8> &7&o%REASON%"
+  - "&7"
+  Footer: "&7Página &e&o%CURRENT_PAGE% &7de &e&o%TOTAL_PAGES% &8| &7Baneos listados: &e&o%COUNT%"
+  PageFooter: "&7Usa &e&o/banlist %NEXT_PAGE% &7para ver la siguiente página"
+
+History:
+  Uso: "&9Usa &8» &7&o/history [Nombre/IP] <Página>"
+  OutOfIndex: "&9No existe la página %PAGE%!"
+  NoEntries: "&9&oNo se pudo encontrar el historial de %NAME% :("
+  Header:
+  - "%PREFIX% &7Historial de %NAME%:"
+  - "&9&oNombre &8| &e&oDuración &8| &7&oOperador"
+  - "&9&oTipo &8> &7&oRazón"
+  - "&7"
+  Entry:
+  - "&8[&e%DATE%&8]"
+  - "&9%NAME% &8| &e%DURATION% &8| &7%OPERATOR%"
+  - "&9%TYPE% &8> &7&o%REASON%"
+  - "&7"
+  Footer: "&7Página &e&o%CURRENT_PAGE% &7de &e&o%TOTAL_PAGES% &8| &7Entradas: &e&o%COUNT%"
+  PageFooter: "&7Usa &e&o/history %NAME% %NEXT_PAGE% &7para ver la siguiente página"
+
+Warns:
+  Uso: "&9Uso &8» &7&o/warns [Nombre] <Página> &o &7&o/warns <Página>"
+  OutOfIndex: "&9No existe la página %PAGE%!"
+  NoEntries: "&9&o%NAME% actualmente no tiene advertencias"
+  Header:
+  - "%PREFIX% &7Advertencias de %NAME%:"
+  - "&9&oNombre &8| &e&oDuración &8| &7&oOperador"
+  - "&9&o#ID &8> &7&oRazón"
+  - "&7"
+  Entry:
+  - "&8[&e%DATE%&8]"
+  - "&9%NAME% &8| &e%DURATION% &8| &7%OPERATOR%"
+  - "&9&l#%ID% &8> &7&o%REASON%"
+  - "&7"
+  Footer: "&7Página &e&o%CURRENT_PAGE% &7de &e&o%TOTAL_PAGES% &8| &7Entradas: &e&o%COUNT%"
+  PageFooter: "&7Usa &e&o/warns %NAME% %NEXT_PAGE% &7para ver la siguiente página"
+
+WarnsOwn:
+  OutOfIndex: "&9No existe la página %PAGE%!"
+  NoEntries: "&9&oAún no tienes ninguna advertencia"
+  Header:
+    - "%PREFIX% &7Tus advertencias:"
+    - "&e&oDuración &8| &7&oOperador"
+    - "&9&o#ID &8> &7&oRazón"
+    - "&7"
+  Entry:
+    - "&8[&e%DATE%&8]"
+    - "&e%DURATION% &8| &7%OPERATOR%"
+    - "&9&l#%ID% &8> &7&o%REASON%"
+    - "&7"
+  Footer: "&7Página &e&o%CURRENT_PAGE% &7de &e&o%TOTAL_PAGES% &8| &7Entradas: &e&o%COUNT%"
+  PageFooter: "&7Usa &e&o/warns %NEXT_PAGE% &7para ver la siguiente página"
+  
+Notes:
+  Uso: "&9Uso &8» &7&o/notes [Nombre] <Página> &o &7&o/notes <Página>"
+  OutOfIndex: "&9No existe la página %PAGE%!"
+  NoEntries: "&9&o%NAME% no tiene ninguna anotación"
+  Header:
+    - "&7"
+    - "%PREFIX% &7Anotaciones de %NAME%:"
+    - "&7"
+  Entry:
+    - "&7%DATE% &8| &7Por &o%OPERATOR% &7(&9#%ID%&7)"
+    - "&8> &e%REASON%"
+    - "&7"
+  Footer: "&7Página &e&o%CURRENT_PAGE% &7de &e&o%TOTAL_PAGES% &8| &7Anotaciones: &e&o%COUNT%"
+  PageFooter: "&7Usa &e&o/notes %NAME% %NEXT_PAGE% &7para ver la siguiente página"
+
+NotesOwn:
+  OutOfIndex: "&9No existe la página %PAGE%!"
+  NoEntries: "&9&oNo tienes ninguna anotación"
+  Header:
+    - "&7"
+    - "%PREFIX% &7Tus anotaciones:"
+    - "&7"
+  Entry:
+    - "&7%DATE% &8| &7Por &o%OPERATOR% &7(&9#%ID%&7)"
+    - "&8> &e%REASON%"
+    - "&7"
+  Footer: "&7Página &e&o%CURRENT_PAGE% &7de &e&o%TOTAL_PAGES% &8| &7Anotaciones: &e&o%COUNT%"
+  PageFooter: "&7Usa &e&o/notes %NEXT_PAGE% &7para ver la siguiente página"
+
+ChangeRazón:
+  Uso: "&9Usa &8» &7&o/change-Razón [ID o ban/mute USUARIO] [Nueva Razón]"
+  Done: "&7Castigo &e&o#%ID% &7fue cambiado correctamente!"
+  NotFound: "&9Disculpa, no pudimos encontrar este castigo"
+
+Check:
+  BanReason: "  &cReason &8\xbb &7%REASON%"
+  MuteReason: "  &cReason &8\xbb &7%REASON%"
+  Note: "&cNotes &8» &7%COUNT%"
+  Uso: "&9Uso &8» &7&o/check [Nombre]"
+  Header: "&7Revisando &e&o%NAME% &8(%CACHED%&8)"
+  UUID: "&9UUID &8» &7%UUID% &8(%CACHED%&8)"
+  IP: "&9IP &8» &7%IP% &8(%CACHED%&8)"
+  Geo: "&9País &8» &7%LOCATION%"
+  Mute: "&9Silenciado &8» &7%DURATION%"
+  MuteRazón: "  &9Razón &8» &7%REASON%"
+  Ban: "&9Suspendido &8» &7%DURATION%"
+  BanRazón: "  &9Razón &8» &7%REASON%"
+  Warn: "&9Advertencias &8» &7%COUNT%"
+  Note: "&9Anotaciones &8» &7%COUNT%"
+  NotFound: "&9Disculpa, pero no pudimos encontrar a %NAME%"
+  Cached: "&e&ocached"
+  NotCached: "&9&onot cached"
+
+# Automatically added by v2.2.1 update process
+UnNote:
+  Usage: "&cUsage &8» &7&o/unwarn [ID] or /unnote clear [Name]"
+  NotFound: "&cCould not find note #%ID%"
+  Done: "&7Note &a&o#%ID% &7was successfully deleted!"
+  Notification: "&e&o%OPERATOR% &7unnoted &c&o%NAME%"
+  Clear:
+    Empty: "&c&o%NAME% &7has no notes!"
+    Done: "&7Cleared &a&o%COUNT% &7notes"
+
+Note:
+  Usage: "&cUsage &8» &7&o/note [Name] [Reason]"
+  Done: "&c&o%NAME% &7was successfully noted!"
+  Exempt: "&7You are not able to note &c&o%NAME%"
+  Notification:
+    - "&c&o%NAME% &7got noted by &e&o%OPERATOR%"
+    - "&7For the reason &o%REASON%"
+
+Notes:
+  Usage: "&cUsage &8» &7&o/notes [Name] <Page> &cor &7&o/notes <Page>"
+  OutOfIndex: "&cThere is no page %PAGE%!"
+  NoEntries: "&c&o%NAME% has no notes yet"
+  Header:
+    - "&7"
+    - "%PREFIX% &7Notes for %NAME%:"
+    - "&7"
+  Entry:
+    - "&7%DATE% &8| &7By &o%OPERATOR% &7(&c#%ID%&7)"
+    - "&8> &e%REASON%"
+    - "&7"
+  Footer: "&7Page &e&o%CURRENT_PAGE% &7of &e&o%TOTAL_PAGES% &8| &7Notes: &e&o%COUNT%"
+  PageFooter: "&7Use &e&o/notes %NAME% %NEXT_PAGE% &7to see the next page"
+
+NotesOwn:
+  OutOfIndex: "&cThere is no page %PAGE%!"
+  NoEntries: "&c&oYou have no notes yet"
+  Header:
+    - "&7"
+    - "%PREFIX% &7Your notes:"
+    - "&7"
+  Entry:
+    - "&7%DATE% &8| &7By &o%OPERATOR% &7(&c#%ID%&7)"
+    - "&8> &e%REASON%"
+    - "&7"
+  Footer: "&7Page &e&o%CURRENT_PAGE% &7of &e&o%TOTAL_PAGES% &8| &7Notes: &e&o%COUNT%"
+  PageFooter: "&7Use &e&o/notes %NEXT_PAGE% &7to see the next page"

@@ -1,0 +1,157 @@
+# ==================================================
+# ARCHIVO DE CONFIGURACIÓN DE NONCHAT
+# Plugin creado por nonxedy (@nonxedy)
+# Publicado en github https://github.com/nonxedy/nonchat
+# Publicado en modrinth https://modrinth.com/plugin/nonchat
+# Versión del plugin: 1.5.2
+#
+# - Soporte LuckPerms
+# - Soporte Vault
+# - Soporte PlaceHolderAPI
+# - Soporte DiscordSRV
+# ==================================================
+
+# Mensajes del sistema.
+no-permission: "&#63E78C¡No tienes permiso!"
+player-only: "&#63E78C¡Solo los jugadores pueden usar este comando!"
+player-offline: "&#63E78C¡El jugador está desconectado!"
+blocked-words: "&#63E78C¡No puedes usar esta palabra!"
+message-filtered: "&#63E78CTu mensaje fue filtrado por el canal."
+mentioned: "&#63E78C¡Has sido mencionado en el chat por {player}!"
+player-not-found: "&#63E78CJugador no encontrado."
+command-disabled: "&#63E78CEste comando está deshabilitado."
+caps-filter: "&#63E78C¡Demasiadas mayúsculas! Máximo permitido: {percentage}%"
+message-not-delivered: "&#63E78CTu mensaje no pudo enviarse."
+
+# Recargar plugin
+reloading: "&#63E78CRecargando..."
+reloaded: "&#63E78C¡Plugin recargado correctamente!"
+reload-failed: "&#63E78C¡Error al recargar el plugin!"
+
+# Ayuda
+help: "&#63E78Cnonchat | comandos:"
+nreload: "&#63E78C/nonchat reload&#ffffff - recargar plugin"
+help-command: "&#63E78C/nonchat help&#ffffff - lista de comandos"
+server-command: "&#63E78C/server&#ffffff - información del servidor"
+message-command: "&#63E78C/m <player> <message>&#ffffff - enviar mensaje privado"
+broadcast-command: "&#63E78C/bc <message>&#ffffff - enviar mensaje a todo el servidor"
+ignore-command: "&#63E78C/ignore <player>&#ffffff - ignorar jugador"
+spy-command: "&#63E78C/spy&#ffffff - activar/desactivar modo espía"
+me-command: "&#63E78C/me <message>&#ffffff - enviar mensaje como tu personaje"
+roll-command: "&#63E78C/roll <número máximo>&#ffffff - tirar un dado"
+channel-command: "&#63E78C/channel help&#ffffff - mostrar comandos de canal"
+reply-command: "&#63E78C/reply <message>&#ffffff - responder al último jugador"
+
+# Limpiar chat
+clear-chat: "&#63E78CLimpiando chat..."
+chat-cleared: "&#63E78C¡Chat limpio!"
+
+# Broadcast
+broadcast: "&#63E78CBroadcast: &#ffffff{message}"
+
+# Mensajes privados
+invalid-usage-message: "&#ffffffUsa: &#63E78C/m <player> <message>"
+
+# Responder
+no-reply-target: "&#63E78CNo tienes a quién responder."
+invalid-usage-reply: "&#ffffffUsa: &#63E78C/reply <message>"
+
+# Ignorar
+ignored-player: "&#63E78CAhora estás ignorando al jugador {player}."
+unignored-player: "&#63E78CYa no estás ignorando al jugador {player}."
+ignored-by-target: "&#63E78CEste jugador te ignora y no puedes enviarle mensajes."
+invalid-usage-ignore: "&#ffffffUsa: &#63E78C/ignore <player>"
+you-are-ignoring-player: "&#63E78CEstás ignorando a {player}. Deja de ignorarlo primero para enviar mensajes."
+cannot-ignore-self: "&#63E78CNo puedes ignorarte a ti mismo."
+
+# Espía
+spy-mode-enabled: "&#63E78CModo espía activado"
+spy-mode-disabled: "&#63E78CModo espía desactivado"
+invalid-usage-spy: "&#ffffffUsa: &#63E78C/spy"
+
+# Me
+invalid-usage-me: "&#ffffffUsa: &#63E78C/me <message>"
+
+# Roll
+invalid-usage-roll: "&#ffffffUsa: &#63E78C/roll <número máximo>"
+invalid-number: "&#63E78CPor favor ingresa un número positivo válido"
+
+# Errores generales
+command-error: "&#63E78COcurrió un error al ejecutar el comando."
+
+# Coordenadas de muerte
+death-coordinates: "&fHas muerto en &#63E78B%s &fcon coordenadas: &fx:&#63E78C%d &fy:&#63E78C%d &fz:&#63E78C%d"
+
+# Nombres de mundos
+dimension-overworld: "Mundo"
+dimension-nether: "Nether"
+dimension-end: "El End"
+
+# Hover de enlaces
+link-hover: "Clic para abrir: {url}"
+
+# Comandos de canal
+channel-help-header: "&#63E78CComandos de canal:"
+channel-help-set: "&#63E78C/channel set <canal>&#ffffff - establecer canal activo"
+channel-help-list: "&#63E78C/channel list&#ffffff - listar canales disponibles"
+channel-help-info: "&#63E78C/channel info <canal>&#ffffff - mostrar info del canal"
+channel-set-usage: "&#ffffffUsa: &#63E78C/channel set <canal>"
+channel-info-usage: "&#ffffffUsa: &#63E78C/channel info <canal>"
+channel-set: "&#63E78CCanal activo: {channel}"
+channel-set-failed: "&#63E78CNo se pudo establecer el canal {channel}"
+channel-not-found: "&#63E78CCanal {channel} no encontrado"
+channel-disabled: "&#63E78CCanal {channel} deshabilitado"
+channel-list-header: "&#63E78CCanales disponibles:"
+channel-list-entry: "&#63E78B{id}&#ffffff - {display} {current}"
+channel-list-no-permission: "&#63E78B{id} - {display} (Sin permiso)"
+channel-current: "&#63E78C(Actual)"
+channel-info-header: "&#63E78CCanal: {channel}"
+channel-info-id: "&#63E78CIdentificador:&#ffffff {id}"
+channel-info-enabled: "&#63E78CHabilitado:&#ffffff {enabled}"
+channel-info-character: "&#63E78CCarácter:&#ffffff {character}"
+channel-info-radius: "&#63E78CRadio:&#ffffff {radius}"
+channel-info-yes: "&#63E78CSí"
+channel-info-no: "&#63E78CNo"
+channel-info-global: "&#63E78CGlobal"
+channel-info-none: "&#63E78CNinguno"
+no-channels: "&#63E78CNo hay canales disponibles"
+message-too-short: "&#63E78CMensaje demasiado corto. Mínimo: {min}"
+message-too-long: "&#63E78CMensaje demasiado largo. Máximo: {max}"
+channel-cooldown: "&#63E78CDebes esperar {seconds} segundos antes de enviar otro mensaje en {channel}"
+
+# Gestión de canales
+channel-help-create: "&#63E78C/channel create <id> <nombre-visible> [opciones]&#ffffff - crear canal"
+channel-help-edit: "&#63E78C/channel edit <id> [opciones]&#ffffff - editar canal"
+channel-help-delete: "&#63E78C/channel delete <id>&#ffffff - eliminar canal"
+channel-help-default: "&#63E78C/channel default <id>&#ffffff - establecer canal predeterminado"
+
+channel-create-usage: "&#ffffffUsa: &#63E78C/channel create <id> <nombre-visible> [opciones]"
+channel-edit-usage: "&#ffffffUsa: &#63E78C/channel edit <id> [opciones]"
+channel-delete-usage: "&#ffffffUsa: &#63E78C/channel delete <id>"
+channel-default-usage: "&#ffffffUsa: &#63E78C/channel default <id>"
+
+channel-invalid-id: "&#63E78CEl ID solo puede contener letras minúsculas, números y guiones"
+channel-already-exists: "&#63E78CCanal {channel} ya existe"
+channel-create-failed: "&#63E78CError al crear canal {channel}"
+channel-created: "&#63E78CCanal {channel} creado"
+channel-updated: "&#63E78CCanal {channel} actualizado"
+channel-update-failed: "&#63E78CError al actualizar canal {channel}"
+channel-deleted: "&#63E78CCanal {channel} eliminado"
+channel-delete-failed: "&#63E78CNo se pudo eliminar {channel}. Puede ser el predeterminado."
+channel-default-set: "&#63E78CCanal predeterminado: {channel}"
+channel-default-failed: "&#63E78CNo se pudo establecer canal predeterminado {channel}"
+
+# Placeholders
+placeholders:
+  spy:
+    enabled: "&#ffffffModo Espía: &#63E78CActivado"
+    disabled: "&#ffffffModo Espía: &#63E78CDesactivado"
+  bubble:
+    enabled: "&#ffffffBurbujas de chat: &#63E78CActivadas"
+    disabled: "&#ffffffBurbujas de chat: &#63E78CDesactivadas"
+  caps-filter:
+    enabled: "&#ffffffFiltro de mayúsculas: &#63E78CActivado"
+    disabled: "&#ffffffFiltro de mayúsculas: &#63E78CDesactivado"
+  ignored:
+    true: "&#63E78CEstás ignorando jugadores"
+    false: "&#63E78CNo estás ignorando a nadie"
